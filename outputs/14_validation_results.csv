@@ -1,0 +1,36 @@
+Validation Stage,Validation Check,Issues Found,Expected,Status
+Risk Segmentation,Duplicate latest customer rows,0,0,PASS
+Risk Segmentation,Missing risk tiers,0,0,PASS
+Risk Segmentation,Negative revenue-at-risk values,0,0,PASS
+Risk Segmentation,Revenue-at-risk formula mismatch,0,0,PASS
+Risk Segmentation,Churn rate rises across risk tiers,0,0,PASS
+Risk-Value Strategy,Duplicate customer rows,0,0,PASS
+Risk-Value Strategy,Missing retention strategies,0,0,PASS
+Risk-Value Strategy,Missing value-aware actions,0,0,PASS
+Risk-Value Strategy,Incorrect strategy assignments,0,0,PASS
+Risk-Value Strategy,Customer-count mismatch,0,0,PASS
+Risk-Value Strategy,Estimated-value reconciliation mismatch,0,0,PASS
+Risk-Value Strategy,Revenue-at-risk reconciliation mismatch,0,0,PASS
+Campaign Economics,Missing strategy assumptions,0,0,PASS
+Campaign Economics,Negative campaign costs,0,0,PASS
+Campaign Economics,Risk-reduction assumptions outside 0–1,0,0,PASS
+Campaign Economics,Preserved revenue exceeds revenue at risk,0,0,PASS
+Campaign Economics,Net-benefit formula mismatch,0,0,PASS
+Campaign Economics,Targeted customers with non-positive benefit,0,0,PASS
+Campaign Economics,Campaign-cost reconciliation mismatch,0,0,PASS
+Campaign Economics,Net-benefit reconciliation mismatch,0,0,PASS
+Budget Optimisation,Budget overspend scenarios,0,0,PASS
+Budget Optimisation,Strategy-capacity violations,0,0,PASS
+Budget Optimisation,Duplicate customers within scenarios,0,0,PASS
+Budget Optimisation,Selected non-positive-benefit customers,0,0,PASS
+Budget Optimisation,Selected ineligible customers,0,0,PASS
+Budget Optimisation,Missing mandatory Rescue Now customers,0,0,PASS
+Budget Optimisation,Primary campaign exceeds budget,0,0,PASS
+Sensitivity Analysis,Primary customer count changed,0,0,PASS
+Sensitivity Analysis,Duplicate primary campaign customers,0,0,PASS
+Sensitivity Analysis,Missing strategy uncertainty assumptions,0,0,PASS
+Sensitivity Analysis,Invalid uncertainty ranges,0,0,PASS
+Sensitivity Analysis,Non-finite simulated benefits,0,0,PASS
+Sensitivity Analysis,Preserved revenue exceeds revenue at risk,0,0,PASS
+Sensitivity Analysis,Base scenario differs from locked campaign,0,0,PASS
+Sensitivity Analysis,Invalid break-even multiplier,0,0,PASS

@@ -1,0 +1,17 @@
+File,Rows,Columns
+01_executive_kpis.csv,1,15
+02_model_performance.csv,1,15
+03_customer_risk_scores.csv,2768,22
+04_primary_campaign_targets.csv,1250,18
+05_risk_tier_summary.csv,4,15
+06_retention_strategy_summary.csv,4,10
+07_campaign_economics_summary.csv,4,12
+08_budget_scenarios.csv,3,14
+09_budget_strategy_allocation.csv,12,3
+10_sensitivity_scenarios.csv,3,9
+11_monte_carlo_summary.csv,1,10
+12_campaign_assumptions.csv,4,4
+13_operational_capacity.csv,4,3
+14_validation_results.csv,35,5
+15_export_validation.csv,6,4
+16_data_dictionary.csv,159,4

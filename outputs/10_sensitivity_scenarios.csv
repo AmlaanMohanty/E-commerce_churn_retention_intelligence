@@ -1,0 +1,4 @@
+Scenario,Effectiveness_Multiplier,Campaign_Customers,Campaign_Cost,Expected_Preserved_Revenue,Expected_Net_Benefit,Expected_ROI_Percent,Profitable_Customers,Profitable_Customer_Share_Percent
+Conservative,0.5,1250,2498.0,7709.396272549392,5211.396272549392,208.62274910125666,1250,100.0
+Base,1.0,1250,2498.0,15418.792545098784,12920.792545098784,517.2454982025133,1250,100.0
+Optimistic,1.5,1250,2498.0,23128.188817648173,20630.188817648173,825.86824730377,1250,100.0

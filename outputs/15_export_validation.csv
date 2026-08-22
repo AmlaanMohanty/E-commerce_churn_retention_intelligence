@@ -1,0 +1,7 @@
+Validation Check,Issues Found,Expected,Status
+Missing required operational columns,0,0,PASS
+Duplicate customer-score rows,0,0,PASS
+Duplicate primary-campaign customers,0,0,PASS
+Primary customers absent from score table,0,0,PASS
+Primary customers with non-positive benefit,0,0,PASS
+Upstream validation failures,0,0,PASS

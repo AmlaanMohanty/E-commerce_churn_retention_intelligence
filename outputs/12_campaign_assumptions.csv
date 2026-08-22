@@ -1,0 +1,5 @@
+retention_strategy,campaign_channel,assumed_relative_risk_reduction,campaign_cost_per_customer
+Rescue Now,Personal outreach,0.25,50.0
+Protect High Value,VIP or loyalty service,0.08,12.0
+Reactivate Efficiently,Automated targeted campaign,0.15,5.0
+Nurture / Monitor,Low-cost digital nurture,0.03,0.5

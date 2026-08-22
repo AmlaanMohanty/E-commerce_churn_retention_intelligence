@@ -1,0 +1,160 @@
+Dataset,Column,Data Type,Description
+01_executive_kpis.csv,snapshot_date,datetime64[ns],Date on which customer risk was calculated.
+01_executive_kpis.csv,customers_scored,int64,Derived project output field.
+01_executive_kpis.csv,total_estimated_90d_value,float64,Derived project output field.
+01_executive_kpis.csv,total_probability_weighted_revenue_at_risk,float64,Derived project output field.
+01_executive_kpis.csv,primary_campaign_customers,int64,Derived project output field.
+01_executive_kpis.csv,primary_campaign_spend,float64,Derived project output field.
+01_executive_kpis.csv,expected_preserved_revenue,float64,Assumption-based expected revenue preserved.
+01_executive_kpis.csv,expected_net_benefit,float64,Expected preserved revenue minus campaign cost.
+01_executive_kpis.csv,expected_roi_percent,float64,Derived project output field.
+01_executive_kpis.csv,break_even_effectiveness_percent,float64,Derived project output field.
+01_executive_kpis.csv,test_roc_auc,float64,Derived project output field.
+01_executive_kpis.csv,test_pr_auc,float64,Derived project output field.
+01_executive_kpis.csv,test_recall,float64,Derived project output field.
+01_executive_kpis.csv,test_precision,float64,Derived project output field.
+01_executive_kpis.csv,test_lift_at_top_20_percent,float64,Derived project output field.
+02_model_performance.csv,evaluation_period,object,Derived project output field.
+02_model_performance.csv,model,object,Derived project output field.
+02_model_performance.csv,feature_set,object,Derived project output field.
+02_model_performance.csv,feature_count,int64,Derived project output field.
+02_model_performance.csv,decision_threshold,float64,Derived project output field.
+02_model_performance.csv,roc_auc,float64,Derived project output field.
+02_model_performance.csv,pr_auc,float64,Derived project output field.
+02_model_performance.csv,accuracy,float64,Derived project output field.
+02_model_performance.csv,balanced_accuracy,float64,Derived project output field.
+02_model_performance.csv,precision,float64,Derived project output field.
+02_model_performance.csv,recall,float64,Derived project output field.
+02_model_performance.csv,f1,float64,Derived project output field.
+02_model_performance.csv,brier_score,float64,Derived project output field.
+02_model_performance.csv,recall_at_top_20_percent,float64,Derived project output field.
+02_model_performance.csv,lift_at_top_20_percent,float64,Derived project output field.
+03_customer_risk_scores.csv,customer_id,string,Anonymised customer identifier.
+03_customer_risk_scores.csv,snapshot_date,datetime64[ns],Date on which customer risk was calculated.
+03_customer_risk_scores.csv,latest_country,string,Most recently observed customer country.
+03_customer_risk_scores.csv,churn_probability,float64,Predicted probability of no purchase during the next 90 days.
+03_customer_risk_scores.csv,risk_percentile,float64,Customer percentile based on predicted churn probability.
+03_customer_risk_scores.csv,risk_tier,category,Operational churn-risk classification.
+03_customer_risk_scores.csv,value_percentile,float64,Derived project output field.
+03_customer_risk_scores.csv,retention_strategy,object,Risk-and-value-based recommended treatment group.
+03_customer_risk_scores.csv,recency_days,float64,Derived project output field.
+03_customer_risk_scores.csv,orders_180d,int64,Derived project output field.
+03_customer_risk_scores.csv,revenue_180d,float64,Derived project output field.
+03_customer_risk_scores.csv,activity_span_180d,float64,Derived project output field.
+03_customer_risk_scores.csv,estimated_90d_customer_value,float64,Estimated customer value over the next 90 days.
+03_customer_risk_scores.csv,revenue_at_risk,float64,Predicted churn probability multiplied by estimated 90-day value.
+03_customer_risk_scores.csv,campaign_channel,object,Derived project output field.
+03_customer_risk_scores.csv,expected_campaign_cost,float64,Planning cost of targeting the customer.
+03_customer_risk_scores.csv,expected_preserved_revenue,float64,Assumption-based expected revenue preserved.
+03_customer_risk_scores.csv,expected_net_benefit,float64,Expected preserved revenue minus campaign cost.
+03_customer_risk_scores.csv,value_aware_action,object,Derived project output field.
+03_customer_risk_scores.csv,actual_churn,int64,Historical outcome used for evaluation; unavailable during live scoring.
+03_customer_risk_scores.csv,selected_for_primary_campaign,int8,Equals 1 when selected under the primary budget.
+03_customer_risk_scores.csv,primary_campaign_priority_rank,float64,Derived project output field.
+04_primary_campaign_targets.csv,campaign_priority_rank,int64,Derived project output field.
+04_primary_campaign_targets.csv,customer_id,string,Anonymised customer identifier.
+04_primary_campaign_targets.csv,snapshot_date,datetime64[ns],Date on which customer risk was calculated.
+04_primary_campaign_targets.csv,latest_country,string,Most recently observed customer country.
+04_primary_campaign_targets.csv,retention_strategy,object,Risk-and-value-based recommended treatment group.
+04_primary_campaign_targets.csv,campaign_channel,object,Derived project output field.
+04_primary_campaign_targets.csv,churn_probability,float64,Predicted probability of no purchase during the next 90 days.
+04_primary_campaign_targets.csv,risk_tier,category,Operational churn-risk classification.
+04_primary_campaign_targets.csv,estimated_90d_customer_value,float64,Estimated customer value over the next 90 days.
+04_primary_campaign_targets.csv,revenue_at_risk,float64,Predicted churn probability multiplied by estimated 90-day value.
+04_primary_campaign_targets.csv,expected_campaign_cost,float64,Planning cost of targeting the customer.
+04_primary_campaign_targets.csv,expected_preserved_revenue,float64,Assumption-based expected revenue preserved.
+04_primary_campaign_targets.csv,expected_net_benefit,float64,Expected preserved revenue minus campaign cost.
+04_primary_campaign_targets.csv,net_benefit_per_pound,float64,Derived project output field.
+04_primary_campaign_targets.csv,cumulative_campaign_cost,float64,Derived project output field.
+04_primary_campaign_targets.csv,cumulative_expected_net_benefit,float64,Derived project output field.
+04_primary_campaign_targets.csv,value_aware_action,object,Derived project output field.
+04_primary_campaign_targets.csv,actual_churn,int64,Historical outcome used for evaluation; unavailable during live scoring.
+05_risk_tier_summary.csv,risk_tier,object,Operational churn-risk classification.
+05_risk_tier_summary.csv,Customers,int64,Derived project output field.
+05_risk_tier_summary.csv,Actual_Churners,int64,Derived project output field.
+05_risk_tier_summary.csv,Churn_Rate,float64,Derived project output field.
+05_risk_tier_summary.csv,Average_Predicted_Risk,float64,Derived project output field.
+05_risk_tier_summary.csv,Estimated_90d_Value,float64,Derived project output field.
+05_risk_tier_summary.csv,Revenue_At_Risk,float64,Derived project output field.
+05_risk_tier_summary.csv,Customer_Share,float64,Derived project output field.
+05_risk_tier_summary.csv,Churner_Capture_Share,float64,Derived project output field.
+05_risk_tier_summary.csv,Revenue_At_Risk_Share,float64,Derived project output field.
+05_risk_tier_summary.csv,Churn Rate (%),float64,Derived project output field.
+05_risk_tier_summary.csv,Average Predicted Risk (%),float64,Derived project output field.
+05_risk_tier_summary.csv,Customer Share (%),float64,Derived project output field.
+05_risk_tier_summary.csv,Churner Capture (%),float64,Derived project output field.
+05_risk_tier_summary.csv,Revenue at Risk Share (%),float64,Derived project output field.
+06_retention_strategy_summary.csv,retention_strategy,object,Risk-and-value-based recommended treatment group.
+06_retention_strategy_summary.csv,Customers,int64,Derived project output field.
+06_retention_strategy_summary.csv,Customer_Share_Percent,float64,Derived project output field.
+06_retention_strategy_summary.csv,Actual_Churners,int64,Derived project output field.
+06_retention_strategy_summary.csv,Churn_Rate_Percent,float64,Derived project output field.
+06_retention_strategy_summary.csv,Average_Predicted_Risk_Percent,float64,Derived project output field.
+06_retention_strategy_summary.csv,Churner_Capture_Percent,float64,Derived project output field.
+06_retention_strategy_summary.csv,Estimated_90d_Value,float64,Derived project output field.
+06_retention_strategy_summary.csv,Revenue_At_Risk,float64,Derived project output field.
+06_retention_strategy_summary.csv,Revenue_At_Risk_Share_Percent,float64,Derived project output field.
+07_campaign_economics_summary.csv,retention_strategy,object,Risk-and-value-based recommended treatment group.
+07_campaign_economics_summary.csv,Candidate_Customers,int64,Derived project output field.
+07_campaign_economics_summary.csv,Recommended_Customers,int64,Derived project output field.
+07_campaign_economics_summary.csv,Campaign_Coverage_Percent,float64,Derived project output field.
+07_campaign_economics_summary.csv,Assumed_Risk_Reduction_Percent,float64,Derived project output field.
+07_campaign_economics_summary.csv,Break_Even_Risk_Reduction_Percent,float64,Derived project output field.
+07_campaign_economics_summary.csv,Cost_Per_Customer,float64,Derived project output field.
+07_campaign_economics_summary.csv,Targeted_Revenue_At_Risk,float64,Derived project output field.
+07_campaign_economics_summary.csv,Campaign_Cost,float64,Derived project output field.
+07_campaign_economics_summary.csv,Expected_Preserved_Revenue,float64,Derived project output field.
+07_campaign_economics_summary.csv,Expected_Net_Benefit,float64,Derived project output field.
+07_campaign_economics_summary.csv,Expected_ROI_Percent,float64,Derived project output field.
+08_budget_scenarios.csv,Budget,float64,Derived project output field.
+08_budget_scenarios.csv,Selected_Customers,int64,Derived project output field.
+08_budget_scenarios.csv,Campaign_Spend,float64,Derived project output field.
+08_budget_scenarios.csv,Unused_Budget,float64,Derived project output field.
+08_budget_scenarios.csv,Budget_Utilization_Percent,float64,Derived project output field.
+08_budget_scenarios.csv,Selected_Revenue_At_Risk,float64,Derived project output field.
+08_budget_scenarios.csv,Expected_Preserved_Revenue,float64,Derived project output field.
+08_budget_scenarios.csv,Expected_Net_Benefit,float64,Derived project output field.
+08_budget_scenarios.csv,Expected_ROI_Percent,float64,Derived project output field.
+08_budget_scenarios.csv,Available_Net_Benefit_Captured_Percent,float64,Derived project output field.
+08_budget_scenarios.csv,Available_Revenue_At_Risk_Covered_Percent,float64,Derived project output field.
+08_budget_scenarios.csv,Incremental_Spend,float64,Derived project output field.
+08_budget_scenarios.csv,Incremental_Net_Benefit,float64,Derived project output field.
+08_budget_scenarios.csv,Marginal_Net_Benefit_Per_Pound,float64,Derived project output field.
+09_budget_strategy_allocation.csv,Budget,float64,Derived project output field.
+09_budget_strategy_allocation.csv,retention_strategy,object,Risk-and-value-based recommended treatment group.
+09_budget_strategy_allocation.csv,Selected_Customers,int64,Derived project output field.
+10_sensitivity_scenarios.csv,Scenario,object,Derived project output field.
+10_sensitivity_scenarios.csv,Effectiveness_Multiplier,float64,Derived project output field.
+10_sensitivity_scenarios.csv,Campaign_Customers,int64,Derived project output field.
+10_sensitivity_scenarios.csv,Campaign_Cost,float64,Derived project output field.
+10_sensitivity_scenarios.csv,Expected_Preserved_Revenue,float64,Derived project output field.
+10_sensitivity_scenarios.csv,Expected_Net_Benefit,float64,Derived project output field.
+10_sensitivity_scenarios.csv,Expected_ROI_Percent,float64,Derived project output field.
+10_sensitivity_scenarios.csv,Profitable_Customers,int64,Derived project output field.
+10_sensitivity_scenarios.csv,Profitable_Customer_Share_Percent,float64,Derived project output field.
+11_monte_carlo_summary.csv,Simulations,int64,Derived project output field.
+11_monte_carlo_summary.csv,Mean_Preserved_Revenue,float64,Derived project output field.
+11_monte_carlo_summary.csv,Mean_Net_Benefit,float64,Derived project output field.
+11_monte_carlo_summary.csv,P05_Net_Benefit,float64,Derived project output field.
+11_monte_carlo_summary.csv,Median_Net_Benefit,float64,Derived project output field.
+11_monte_carlo_summary.csv,P95_Net_Benefit,float64,Derived project output field.
+11_monte_carlo_summary.csv,Mean_ROI_Percent,float64,Derived project output field.
+11_monte_carlo_summary.csv,P05_ROI_Percent,float64,Derived project output field.
+11_monte_carlo_summary.csv,P95_ROI_Percent,float64,Derived project output field.
+11_monte_carlo_summary.csv,Probability_Positive_Net_Benefit_Percent,float64,Derived project output field.
+12_campaign_assumptions.csv,retention_strategy,object,Risk-and-value-based recommended treatment group.
+12_campaign_assumptions.csv,campaign_channel,object,Derived project output field.
+12_campaign_assumptions.csv,assumed_relative_risk_reduction,float64,Derived project output field.
+12_campaign_assumptions.csv,campaign_cost_per_customer,float64,Derived project output field.
+13_operational_capacity.csv,retention_strategy,object,Risk-and-value-based recommended treatment group.
+13_operational_capacity.csv,maximum_customer_capacity,int64,Derived project output field.
+13_operational_capacity.csv,capacity_reason,object,Derived project output field.
+14_validation_results.csv,Validation Stage,object,Derived project output field.
+14_validation_results.csv,Validation Check,object,Derived project output field.
+14_validation_results.csv,Issues Found,int64,Derived project output field.
+14_validation_results.csv,Expected,int64,Derived project output field.
+14_validation_results.csv,Status,object,Derived project output field.
+15_export_validation.csv,Validation Check,object,Derived project output field.
+15_export_validation.csv,Issues Found,int64,Derived project output field.
+15_export_validation.csv,Expected,int64,Derived project output field.
+15_export_validation.csv,Status,object,Derived project output field.

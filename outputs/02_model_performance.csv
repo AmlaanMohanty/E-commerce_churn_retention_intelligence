@@ -1,0 +1,2 @@
+evaluation_period,model,feature_set,feature_count,decision_threshold,roc_auc,pr_auc,accuracy,balanced_accuracy,precision,recall,f1,brier_score,recall_at_top_20_percent,lift_at_top_20_percent
+Out-of-time test,Tuned Logistic Regression,Drift-Robust Feature Set,44,0.4143192645644578,0.7732267000220102,0.6832312630954248,0.6478135164438019,0.6805803990830859,0.5491781191053624,0.8807260155574762,0.6765145228215768,0.19747861781160247,0.35782195332757133,1.7887865309076598
